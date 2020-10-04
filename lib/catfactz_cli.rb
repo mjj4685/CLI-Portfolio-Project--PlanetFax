@@ -1,8 +1,8 @@
 
 require_relative "./catfactz_cli/version"
 
-
-
-puts "environment file"
+require_relative "./catfactz_cli/api.rb"
+require_relative "./catfactz_cli/cli.rb"
+require_relative "./catfactz_cli/catfactz.rb"
 
 
