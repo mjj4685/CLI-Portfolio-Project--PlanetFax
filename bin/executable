@@ -1,7 +1,3 @@
 #!/usr/bin/env ruby
 
-require 'pry'
-require 'json'
-require 'open-uri'
-require 'net/http'
-
+require_relative '../lib/catfactz_cli.rb'
