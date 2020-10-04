@@ -12,10 +12,11 @@ class CatFaxCLI::CLI
         input = gets.strip.downcase
 
         if input == "meow"
-            puts "Meow there, what you would like to know?"
+            catfactz_list
+            menu
 
         elsif input == "exit"
-            puts "bye bye meow"
+            goodbye
 
         else
             invalid_entry
@@ -26,9 +27,17 @@ class CatFaxCLI::CLI
     end
 
     def catfactz_list
-        
+        puts "1. catfax 1"
+        puts "2. catfax 2"
+        puts "3. catfax 3"
 
     end
+
+    def goodbye
+        puts "Goodbye, friend of feline!"
+
+    end
+
 
 
     def invalid_entry
