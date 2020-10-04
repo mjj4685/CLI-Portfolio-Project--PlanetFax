@@ -1,19 +1,9 @@
-class CatFaxCli
+class CatFaxCLI::CLI
 
-    def user_input
+    def call
         puts "Welcome, friend of feline!"
-        puts "To see cat factz, enter 'meow'"
-        puts "To exit the CatFax, enter 'bye bye meow'"
+        puts ""
 
-        
-        
-    end
-
-    def 
-        
-    end
-
-    
 
 
 end
