@@ -12,7 +12,7 @@
 
 3 classes :
 CLI - controller - what communicates with my user
-catfactz 
-API
+catfactz - where objects are created and stored for user display
+API - bring in external data, consume api here, instantiate my objects
 
 
