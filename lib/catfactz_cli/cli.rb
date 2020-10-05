@@ -34,7 +34,7 @@ class CatFaxCLI::CLI
         puts ""
         puts ""
         puts "Meow! Which catfax would you like details about:"
-        input = gets.strip.downcase
+        input = gets.strip.capitalize
         catfactz_selection(input)
     
     end
