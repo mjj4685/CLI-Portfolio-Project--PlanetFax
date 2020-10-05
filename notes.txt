@@ -12,7 +12,7 @@
 
 3 classes :
 CLI - controller - what communicates with my user
-planetfactz - where objects are created and stored for user display
+PlanetFax - where objects are created and stored for user display
 API - bring in external data, consume api here, instantiate my objects
 
 
