@@ -42,11 +42,12 @@ class CatFaxCLI::CLI
     # :text, :type, :user
 
     def catfactz_selection(catfax)
-        fact = Catfactz.find_by_name(catfax)
-        fact.each do |f|
-            Text: "#{f.text}"
-            Type: "#{f.type}"
-            User: "#{f.user}"
+         fact = Catfactz.find_by_name(catfax)
+         fact.each do |f|
+            puts " Text: #{f.text}"
+            puts " Type: #{f.type}"
+            puts " User: #{f.user}"
+        end
 
     end
 
