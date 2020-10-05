@@ -1,18 +1,18 @@
 1. build CLI
 2. welcome user, prompt user to either select a list, or tell exit 
-3. if they select list, print the list of cat facts
-     1. cat fact 1
-     2. cat fact 2
-     3. cat fact 3
+3. if they select list, print the list of planets
+     1. planet 1
+     2. planet 2
+     3. planet 3
 
-4. when cat fact is selected, print the list of cat fact details
+4. when planet is selected, print the list of planet details
 
 5. if they select exit, goodbye exit program
 
 
 3 classes :
 CLI - controller - what communicates with my user
-catfactz - where objects are created and stored for user display
+planetfactz - where objects are created and stored for user display
 API - bring in external data, consume api here, instantiate my objects
 
 
