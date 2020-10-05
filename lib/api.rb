@@ -4,7 +4,7 @@ class API
         response = RestClient.get("https://swapi.dev/api/planets/")
         planets_array = JSON.parse(response.body)["results"]
         planets_array.each do |planetzz|
-            CatFax.new(planetzz)
+            PlanetFax.new(planetzz)
         end
     end
 
