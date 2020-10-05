@@ -5,10 +5,11 @@ class Catfactz
     @@all = []
 
     def initialize(attr_hash)
-        attr_hash
-
-    
-
+        attr_hash.each do |m, j|
+            self.send("#{m}=", j) if self.respond_to?("#{m}=")
+        end
+        save
+    end
 
     def save
         @@all <<self
