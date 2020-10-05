@@ -5,8 +5,8 @@ class Catfactz
     @@all = []
 
     def initialize(attr_hash)
-        attr_hash.each do |m, j|
-            self.send("#{m}=", j) if self.respond_to?("#{m}=")
+        attr_hash.each do |key, value|
+            self.send("#{key}=", value) if self.respond_to?("{#key}=")
         end
         save
     end
@@ -17,6 +17,12 @@ class Catfactz
 
     def self.all
         @@all
+    end
+
+    def self.find_by_name(name)
+        self.all.select do |catz|
+            catz.name.downcase == name
+        end
     end
     
 
