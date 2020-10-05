@@ -51,6 +51,7 @@ class CLI
             puts " Population: #{f.population}"
 
             # attr_accessor :name, :climate, :terrain, :population
+
         end
 
     end
