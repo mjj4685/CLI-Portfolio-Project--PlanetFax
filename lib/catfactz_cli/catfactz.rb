@@ -21,7 +21,7 @@ class Catfactz
 
     def self.find_by_name(name)
         self.all.select do |catz|
-            catz.name.downcase == name
+            catz.name == name
         end
     end
     

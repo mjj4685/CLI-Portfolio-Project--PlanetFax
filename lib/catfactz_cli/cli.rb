@@ -28,9 +28,7 @@ class CatFaxCLI::CLI
     end
 
     def catfactz_list
-        puts "1. catfax 1"
-        puts "2. catfax 2"
-        puts "3. catfax 3"
+        Catfactz.all.each_with_index do |factz, index|
         puts ""
         puts ""
         puts "Meow! Which catfax would you like details about:"
