@@ -1,7 +1,5 @@
 class PlanetFax
 
-    # attr_accessor :text, :type, :user
-
     attr_accessor :name, :climate, :terrain, :population
 
     @@all = []
@@ -22,8 +20,8 @@ class PlanetFax
     end
 
     def self.find_by_name(name)
-        self.all.select do |catz|
-            catz.name.downcase == name
+        self.all.select do |planetzz|
+            planetzz.name.downcase == name
         end
     end
     

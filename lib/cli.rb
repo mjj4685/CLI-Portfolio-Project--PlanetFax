@@ -1,9 +1,9 @@
 class CLI
 
     def call
-        puts "Welcome, friend of feline!"
-        puts "To see catfax, enter 'meow'"
-        puts "To exit catfax, enter 'exit"
+        puts "Welcome, stargazer!"
+        puts "To see planetfax, enter 'planetz'"
+        puts "To exit planetfax, enter 'exit'"
         API.get_data
         menu
 
@@ -12,7 +12,7 @@ class CLI
     def menu
         input = gets.strip.downcase
 
-        if input == "meow"
+        if input == "planetz"
             planets_list
             menu
 
@@ -21,6 +21,7 @@ class CLI
 
         else
             invalid_entry
+
         end
 
 
@@ -33,20 +34,23 @@ class CLI
         end
         puts ""
         puts ""
-        puts "Meow! Which catfax would you like details about:"
+        puts "Which planet would you like details about:"
         input = gets.strip.downcase
         planets_selection(input)
     
     end
 
-    # attr_accessor :name, :climate, :terrain, :population
+    
 
-    def planets_selection(catfax)
-         fact = PlanetFax.find_by_name(catfax)
+    def planets_selection(planet)
+         fact = PlanetFax.find_by_name(planet)
          fact.each do |f|
-            puts " Text: #{f.text}"
-            puts " Type: #{f.type}"
-            puts " User: #{f.user}"
+            puts " Name: #{f.name}"
+            puts " Climate: #{f.climate}"
+            puts " Terrain: #{f.terrain}"
+            puts " Population: #{f.population}"
+
+            # attr_accessor :name, :climate, :terrain, :population
         end
 
     end
@@ -60,6 +64,7 @@ class CLI
 
 
     def invalid_entry
+
         puts "Invalid entry, try again"
         menu
 
