@@ -1,6 +1,8 @@
 class Catfactz
 
-    attr_accessor :text, :type, :user
+    # attr_accessor :text, :type, :user
+
+    attr_accessor :name, :climate, :terrain, :population
 
     @@all = []
 
