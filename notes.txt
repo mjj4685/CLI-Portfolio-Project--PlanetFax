@@ -1,17 +1,42 @@
-1. build CLI
-2. welcome user, prompt user to either select a list, or tell exit 
-3. if they select list, print the list of planets
+1. welcome user, prompt user to either select a list, or tell exit   (see below)
+2. if they select list, print the list of planets
      1. planet 1
      2. planet 2
      3. planet 3
 
-4. when planet is selected, print the list of planet details
+3. when planet is selected, print the list of planet details
 
-5. if they select exit, goodbye exit program
-
+4. if they select exit, goodbye exit program
 
 3 classes :
 CLI - controller - what communicates with my user
 planetfactz - where objects are created and stored for user display
 API - bring in external data, consume api here, instantiate my objects
+
+
+---------command line user entry---------------------------------
+
+Welcome to PlanetFax, stargazer!
+To see planets, enter 'planetz'
+To exit PlanetFax, enter 'exit'
+
+planetz
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+
+Which planet would you like details about:
+xxxxx
+
+ Name: 
+ Climate:
+ Terrain: 
+ Population: 
 

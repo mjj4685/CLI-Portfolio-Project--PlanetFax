@@ -1,9 +1,9 @@
 class CLI
 
     def call
-        puts "Welcome, stargazer!"
-        puts "To see planetfax, enter 'planetz'"
-        puts "To exit planetfax, enter 'exit'"
+        puts "Welcome to PlanetFax, stargazer!"
+        puts "To see planets, enter 'planetz'"
+        puts "To exit PlanetFax, enter 'exit'"
         API.get_data
         menu
 
