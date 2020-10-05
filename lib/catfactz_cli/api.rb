@@ -9,6 +9,7 @@
 # require 'net/http'
 
 class API
+
     def self.get_data
         response = RestClient.get("https://cat-fact.herokuapp.com/facts")
         catz_array = JSON.parse(response.body)["results"]
@@ -16,4 +17,8 @@ class API
             CatFax.new(catz)
         end
     end
+
+    
+end
+
     
