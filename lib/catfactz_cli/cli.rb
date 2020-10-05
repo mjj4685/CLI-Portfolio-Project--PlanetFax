@@ -29,6 +29,8 @@ class CatFaxCLI::CLI
 
     def catfactz_list
         Catfactz.all.each_with_index do |factz, index|
+           puts "#{index + 1}. #{starship.name}"
+        end
         puts ""
         puts ""
         puts "Meow! Which catfax would you like details about:"
@@ -38,8 +40,7 @@ class CatFaxCLI::CLI
     end
 
     def catfactz_selection(catfax)
-        
-
+        Catfactz.find_by_name
 
     end
 
