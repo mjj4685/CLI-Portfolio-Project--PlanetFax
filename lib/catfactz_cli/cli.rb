@@ -40,7 +40,7 @@ class CatFaxCLI::CLI
     end
 
     def catfactz_selection(catfax)
-        Catfactz.find_by_name
+        c = Catfactz.find_by_name(catfax)
 
     end
 

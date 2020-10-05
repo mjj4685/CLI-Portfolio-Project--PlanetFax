@@ -7,6 +7,7 @@ require_relative "./catfactz_cli/catfactz.rb"
 
 require 'rest-client'
 require 'json'
+require 'pry'
 
 
 
