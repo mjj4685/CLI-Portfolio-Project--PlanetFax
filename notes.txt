@@ -2,6 +2,7 @@
 1. Welcome user, prompt user to either select a list, or tell exit   (see below demo)
 
 2. If they select list, print the list of planets
+
      1. planet 1
      2. planet 2
      3. planet 3
