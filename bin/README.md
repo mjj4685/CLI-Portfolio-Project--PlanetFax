@@ -1,7 +1,7 @@
 # CLI-Portfolio-Project-CatFax
 
 
-Welcome to CatFax! Please read below for setup. 
+Welcome to PlanetFax! Please read below for setup. 
 
 
 ---- How To Run ----

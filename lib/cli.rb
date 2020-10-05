@@ -28,7 +28,7 @@ class CLI
     end
 
     def catfactz_list
-        Catfactz.all.each_with_index do |factz, index|
+        PlanetFax.all.each_with_index do |factz, index|
            puts "#{index + 1}. #{factz.name}"
         end
         puts ""
@@ -42,7 +42,7 @@ class CLI
     # :text, :type, :user
 
     def catfactz_selection(catfax)
-         fact = Catfactz.find_by_name(catfax)
+         fact = PlanetFax.find_by_name(catfax)
          fact.each do |f|
             puts " Text: #{f.text}"
             puts " Type: #{f.type}"

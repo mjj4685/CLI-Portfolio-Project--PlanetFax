@@ -1,4 +1,4 @@
-class Catfactz
+class PlanetFax
 
     # attr_accessor :text, :type, :user
 
