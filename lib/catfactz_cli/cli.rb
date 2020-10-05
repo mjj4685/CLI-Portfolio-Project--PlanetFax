@@ -1,4 +1,4 @@
-class CatFaxCLI::CLI
+class CLI
 
     def call
         puts "Welcome, friend of feline!"

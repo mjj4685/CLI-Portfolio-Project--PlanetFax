@@ -2,7 +2,7 @@
 
 require_relative '../lib/catfactz_cli'
 
-CatFaxCLI::CLI.new.call
+CLI.new.call
 
 
 
