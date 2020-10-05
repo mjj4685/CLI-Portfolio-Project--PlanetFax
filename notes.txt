@@ -20,9 +20,9 @@ API - bring in external data, consume api here, instantiate my objects
 ---------command line interface (CLI) user demo--------------------------------
 
 
-run file 
+to run the file 
 
-type 
+type into the command line:
 
  ./bin/planetz.rb    
 
