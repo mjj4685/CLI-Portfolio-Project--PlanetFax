@@ -33,13 +33,14 @@ class CatFaxCLI::CLI
         puts ""
         puts ""
         puts "Meow! Which catfax would you like details about:"
-        catfactz_selection
+        input = gets.strip.downcase
+        catfactz_selection(input)
     
     end
 
-    def catfactz_selection
-        input = gets.strip.downcase
+    def catfactz_selection(catfax)
         
+
 
     end
 
