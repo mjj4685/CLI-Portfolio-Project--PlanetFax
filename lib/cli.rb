@@ -13,7 +13,7 @@ class CLI
         input = gets.strip.downcase
 
         if input == "meow"
-            catfactz_list
+            planets_list
             menu
 
         elsif input == "exit"
@@ -27,21 +27,21 @@ class CLI
 
     end
 
-    def catfactz_list
-        PlanetFax.all.each_with_index do |factz, index|
-           puts "#{index + 1}. #{factz.name}"
+    def planets_list
+        PlanetFax.all.each_with_index do |planetz, index|
+           puts "#{index + 1}. #{planetz.name}"
         end
         puts ""
         puts ""
         puts "Meow! Which catfax would you like details about:"
         input = gets.strip.downcase
-        catfactz_selection(input)
+        planets_selection(input)
     
     end
 
-    # :text, :type, :user
+    # attr_accessor :name, :climate, :terrain, :population
 
-    def catfactz_selection(catfax)
+    def planets_selection(catfax)
          fact = PlanetFax.find_by_name(catfax)
          fact.each do |f|
             puts " Text: #{f.text}"
