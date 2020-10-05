@@ -4,6 +4,7 @@ class CatFaxCLI::CLI
         puts "Welcome, friend of feline!"
         puts "To see catfax, enter 'meow'"
         puts "To exit catfax, enter 'exit"
+        API.get_data
         menu
 
     end
