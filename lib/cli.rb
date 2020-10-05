@@ -57,7 +57,7 @@ class CLI
 
 
     def goodbye
-        puts "Goodbye, friend of feline!"
+        puts "Goodbye, stargazer!"
 
     end
 
