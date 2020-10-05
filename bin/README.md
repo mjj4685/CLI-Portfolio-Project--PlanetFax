@@ -1,7 +1,9 @@
 # CLI-Portfolio-Project-CatFax
 
 
-Welcome to PlanetFax! Please read below for setup. 
+Welcome to PlanetFax! 
+
+Here you will find a detailed list of planets from within a galaxy far, far away, for your educational indulgence. 
 
 
 ---- How To Run ----
