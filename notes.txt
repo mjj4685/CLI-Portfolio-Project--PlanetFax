@@ -1,12 +1,14 @@
-1. welcome user, prompt user to either select a list, or tell exit   (see below)
-2. if they select list, print the list of planets
+
+1. Welcome user, prompt user to either select a list, or tell exit   (see below demo)
+
+2. If they select list, print the list of planets
      1. planet 1
      2. planet 2
      3. planet 3
 
-3. when planet is selected, print the list of planet details
+3. When planet is selected, print the list of planet details
 
-4. if they select exit, goodbye exit program
+4. If they select exit, goodbye exit program
 
 3 classes :
 CLI - controller - what communicates with my user
@@ -14,29 +16,30 @@ planetfactz - where objects are created and stored for user display
 API - bring in external data, consume api here, instantiate my objects
 
 
----------command line user entry---------------------------------
+
+---------command line interface user demo--------------------------------
 
 Welcome to PlanetFax, stargazer!
 To see planets, enter 'planetz'
 To exit PlanetFax, enter 'exit'
 
 planetz
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
+1. Tatooine
+2. Alderaan
+3. Yavin IV
+4. Hoth
+5. Dagobah
+6. Bespin
+7. Endor
+8. Naboo
+9. Coruscant
+10. Kamino
 
 Which planet would you like details about:
-xxxxx
+Tatooine
 
- Name: 
- Climate:
- Terrain: 
- Population: 
+ Name: Tatooine
+ Climate: arid
+ Terrain: desert
+ Population: 200000
 
