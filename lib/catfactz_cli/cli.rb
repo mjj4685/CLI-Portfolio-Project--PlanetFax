@@ -29,18 +29,24 @@ class CatFaxCLI::CLI
 
     def catfactz_list
         Catfactz.all.each_with_index do |factz, index|
-           puts "#{index + 1}. #{starship.name}"
+           puts "#{index + 1}. #{factz.name}"
         end
         puts ""
         puts ""
         puts "Meow! Which catfax would you like details about:"
-        input = gets.strip.capitalize
+        input = gets.strip.downcase
         catfactz_selection(input)
     
     end
 
+    # :text, :type, :user
+
     def catfactz_selection(catfax)
-        c = Catfactz.find_by_name(catfax)
+        fact = Catfactz.find_by_name(catfax)
+        fact.each do |f|
+            Text: "#{f.text}"
+            Type: "#{f.type}"
+            User: "#{f.user}"
 
     end
 
