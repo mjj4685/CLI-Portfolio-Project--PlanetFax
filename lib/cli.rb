@@ -8,12 +8,21 @@ class CLI
         menu
 
     end
+    
+    def prompt
+        puts "To see planets, enter 'planetz'"
+        puts "To exit PlanetFax, enter 'exit'"
+      
+    end
+
+
 
     def menu
         input = gets.strip.downcase
 
         if input == "planetz"
             planets_list
+            prompt
             menu
 
         elsif input == "exit"
@@ -21,6 +30,8 @@ class CLI
 
         else
             invalid_entry
+            prompt
+            menu
 
         end
 
