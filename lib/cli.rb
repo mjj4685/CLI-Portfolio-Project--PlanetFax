@@ -22,21 +22,25 @@ class CLI
 
         if input == "planetz"
             planets_list
+            puts ""
             prompt
+            puts""
             menu
+            puts""
 
         elsif input == "exit"
             goodbye
+            puts ""
 
         else
             invalid_entry
+            puts""
             prompt
+            puts""
             menu
+            puts""
 
         end
-
-
-
     end
 
     def planets_list
@@ -45,13 +49,12 @@ class CLI
         end
         puts ""
         puts ""
-        puts "Which planet would you like details about:"
+        puts ""
+        puts "Enter the name of the planet you would you like details about:"
         input = gets.strip.downcase
         planets_selection(input)
     
     end
-
-    
 
     def planets_selection(planet)
          fact = PlanetFax.find_by_name(planet)
@@ -61,29 +64,19 @@ class CLI
             puts " Terrain: #{f.terrain}"
             puts " Population: #{f.population}"
 
-            # attr_accessor :name, :climate, :terrain, :population
-
         end
-
     end
-
 
     def goodbye
         puts "Goodbye, stargazer!"
-
+        puts""
     end
-
-
 
     def invalid_entry
-
         puts "Invalid entry, try again"
+        puts""
         menu
-
+        puts""
     end
-
-
-
-
 end
 
