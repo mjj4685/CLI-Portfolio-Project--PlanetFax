@@ -47,7 +47,12 @@ https://github.com/mjj4685/CLI-Portfolio-Project-PlanetFax
 Once downloaded to your local environment, open the file and run:
 
 
- ./bin/planetz.rb
+ ruby bin/planetz
+
+
+gem install rest-client
+gem install json
+gem install pry
 
 
 
